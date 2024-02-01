@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Honk", system-ui;
+}
+
+.button__1 {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ff0000, #fff45e);
+  box-shadow: 5px 4px 8px #1b1b1b, 0px 0px 0px #101011;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.button__1:hover {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff45e, #ff0000);
+  box-shadow: 5px 4px 8px #353535, 0px 0px 0px #0e0d0d;
+}
+
+.hero__bg {
+  background: rgb(126, 145, 112);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 145, 112, 1) 0%,
+    rgba(126, 143, 128, 1) 100%
+  );
+}
+
+.image__animation{
+  transition: all 0.3s ease;
+  animation: imageAnimation 3s infinite;
+}
+
+@keyframes imageAnimation {
+  0%{
+    transform: scale(0.8);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.8);
+  }
+  
+}
